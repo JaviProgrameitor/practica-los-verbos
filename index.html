@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo.png">
+
+    <!-- links -->
+    <link rel="stylesheet" href="./css/bases.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/contenedor-burbujas.css">
+    <link rel="stylesheet" href="./css/boton-theme.css">
+    <link rel="stylesheet" href="./css/respuestas.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Merriweather:wght@700&family=Playfair+Display:ital@1&family=Rubik+Bubbles&family=Shantell+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Practica los verbos</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__particles-js" id="particles-js"></div>
+      <article class="header__contenedor-titulo">
+        <span class="header__titulo-1">Practica</span>
+        <span class="header__titulo-2">Los verbos</span>
+      </article>
+      <article class="header__contenedor-imagen">
+        <img class="header__imagen" src="./assets/img/banner.png" alt="">
+      </article>
+    </header>
+    <!-- header -->
+
+    <!-- main -->
+
+    <main class="contenedor-burbujas">
+      <h2 class="contenedor-burbujas__titulo" data-theme-texto>¿Qué quieres estudiar hoy?</h2>
+      <div class="contenedor-burbujas__contenido">
+
+      </div>
+      <div class="contenedor-burbujas__tiempos">
+        <h2 class="contenedor-burbujas__tiempos-titulo" data-theme-texto="">¿Qué tiempo gramatical quieres estudiar?</h2>
+        <div class="contenedor-burbujas__contenido-tiempos">
+          <div class="burbujas-tiempos card" data-theme-burbujas>
+            Español
+            <figure class="cajita-check">
+              <i class="fa-solid fa-check burbuja-check"></i>
+            </figure>
+          </div>
+          <div class="burbujas-tiempos card" data-theme-burbujas>
+            Infinitivo
+            <figure class="cajita-check">
+              <i class="fa-solid fa-check burbuja-check"></i>
+            </figure>
+          </div>
+          <div class="burbujas-tiempos card" data-theme-burbujas>
+            Pasado Simple
+            <figure class="cajita-check">
+              <i class="fa-solid fa-check burbuja-check"></i>
+            </figure>
+          </div>
+          <div class="burbujas-tiempos card" data-theme-burbujas>
+            Pasado Participio
+            <figure class="cajita-check">
+              <i class="fa-solid fa-check burbuja-check"></i>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor-burbujas__botones">
+        <div>
+          <button class="noselect boton-eliminar">
+            <span class="text">Eliminar</span>
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div>
+          <button class="continue-application boton-comenzar">
+            <div>
+                <div class="pencil"></div>
+                <div class="folder">
+                    <div class="top">
+                        <svg viewBox="0 0 24 27">
+                            <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+                        </svg>
+                    </div>
+                    <div class="paper"></div>
+                </div>
+            </div>
+            Comenzar
+          </button>
+        </div>
+      </div>
+      <div class="padre-respuestas">
+        <div class="contenedor-respuestas">
+          <h3 data-theme-texto class="contenedor-respuestas__titulo">Revisión de respuestas</h3>
+        </div>
+      </div>
+    </main>
+
+    <!-- main -->
+
+    <!-- modal trabajo -->
+
+    <div class="modal">
+      <div class="modal__contenido">
+        <div data-pregunta class="modal__pregunta"></div>
+        <div data-contenido-opciones class="modal__opciones">
+          <div data-opciones class="opcion opcion-1">
+            
+          </div>
+          <div data-opciones class="opcion opcion-2">
+            
+          </div>
+          <div data-opciones class="opcion opcion-3">
+            
+          </div>
+          <div data-opciones class="opcion opcion-4">
+            
+          </div>
+        </div>
+        <div class="modal__container-boton">
+          <button class="modal__boton"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal trabajo -->
+
+    <!-- botón theme -->
+
+    <div class="toggleWrapper">
+      <input type="checkbox" class="dn" id="dn">
+      <label for="dn" class="toggle boton-theme">
+        <span class="toggle__handler">
+          <span class="crater crater--1"></span>
+          <span class="crater crater--2"></span>
+          <span class="crater crater--3"></span>
+        </span>
+        <span class="star star--1"></span>
+        <span class="star star--2"></span>
+        <span class="star star--3"></span>
+        <span class="star star--4"></span>
+        <span class="star star--5"></span>
+        <span class="star star--6"></span>
+      </label>
+    </div>
+
+    <!-- botón theme -->
+
+    <!-- template -->
+    
+    <template id="template-burbujas">
+      <div class="burbujas card" data-theme-burbujas>
+        <span class="burbuja-span"></span>
+        <figure class="cajita-check">
+          <i class="fa-solid fa-check burbuja-check"></i>
+        </figure>
+      </div>
+    </template>
+
+    <!-- template -->
+
+    <script src="./js/particles/particles.js"></script>
+    <script src="./js/particles/app.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
